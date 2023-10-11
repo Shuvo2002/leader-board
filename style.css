@@ -1,0 +1,243 @@
+/* top players */
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    width: 100%;
+    height: 95px;
+    background: #562EFF;
+}
+.heading1{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.heading2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading2 h4, .fa-lightbulb{
+    color: #fff;
+    margin-left: 10px;
+}
+.heading2 img{
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.heading2 a{
+    text-decoration: none;
+    margin-right: 50px;
+    color: #fff;
+}
+.padding{
+    padding: 25px 225px 250px;  
+}
+body{
+    background: #F3F1FF;;
+}
+.top-player{
+    padding: 10px;
+    padding-right: 0;
+    background: #fff;
+    border-radius: 5px;
+    width: 870px;
+    height: 679px;
+
+}
+h1{
+    color: #562EFF;
+}
+.top-player h1{
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.player{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 50px;
+}
+.players img{
+    width: 56px;
+    height: 56px;
+    margin-top: 10px;
+}
+hr{
+    width: 270%;
+    margin-top: 20px;
+}
+.blog{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.info-blog{
+    display: flex;
+    text-align: left;
+}
+.info-blog img{
+    width: 224px;
+    height: 127px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.intro{
+    margin-top: 18px;
+    margin-left: 10px;
+}
+.info-blog p{
+    color: #9F9F9F;
+    margin-top: 5px;
+}
+.info-blog span{
+    color: #562EFF;
+}
+.course1 img, .course2 img, .course3 img{
+    width: 266px;
+    height: 141px;
+}
+.part-2{
+    background: #fff;
+    margin-top: 23px;
+    width: 881px;
+    height: 362px;
+    border-radius: 5px;  
+    position: relative;
+}
+.title{
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 18px;
+    color: #562EFF
+}
+.course-details{
+    display: flex;
+    gap: 5px;
+    margin-top: 70px;
+    position: absolute;
+}
+.course1, .course2, .course3{
+    padding: 10px;
+    border-radius: 15px;
+    background: #f3f1ff54;
+}
+.course1 p, .course2 p, .course3 p{
+    color: #ED6B4F;
+    font-size: 14.5px;
+}
+.rating{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.fa-star{
+    font-size: 12px;
+}
+.filled{
+    color: #ffc014;
+}
+.empty{
+    color: #aeaeae;
+}
+.curse-duration1, .curse-duration3{
+    background:  #FFE4E8;
+    color: #FF4A60;
+    border-radius: 20px;
+    width: 35%;
+}
+.fa-clock{
+    margin-left: 7px;
+}
+.curse-duration2{
+    background:  #FEE5DF;
+    color: #ED6B4F;
+    border-radius: 20px;
+    width: 35%;
+}
+
+@media screen and (max-width: 688px) {
+    .heading1{
+        flex-direction: column;
+    }
+    .heading2 img{
+        margin-top: 15px;
+    }
+    .padding{
+        padding: 0;
+    }
+    .top-player {
+        padding-right: 5px;
+        background: #fff;
+        border-radius: 5px;
+        width: 100%;
+        height: 100%;
+    }
+    hr {
+        width: 185%;
+    }
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0;
+    }
+    .intro h3{
+        font-size: 15px;
+    }
+    .info-blog img {
+        width: 170px;
+        height: 131px;
+        margin-top: 20px;
+        margin-left: 35px;
+    }
+    .blog { 
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: -27px;
+    }
+    .part-2{
+        margin-top: 60px;
+        width: 100%;
+        height: 960px;
+    }
+    .course-details{
+        flex-direction: column;
+        gap: 19px;
+    }
+    .course1, .course2, .course3 {
+        padding: 48px
+    }
+    .title{
+        margin-left: 121px;
+    }
+}
+
+@media screen and (min-width: 689px) and (max-width: 992px) {
+    .padding{
+        padding: 0;
+    }
+    .top-player{
+        width: 757px;
+        padding: 0;
+        margin-top: 30px;
+    }
+    .part-2{
+        width: 755px;
+        height: 1000px;
+    }
+    .course-details{
+        flex-direction: column;
+        gap: 45px;
+        margin-left: 100px;
+    }
+    .title{
+        margin-left: -35px;
+    }
+
+    .part-2{
+        display: flex;
+        justify-content: center;
+    }
+}
